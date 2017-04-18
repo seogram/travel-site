@@ -1,0 +1,21 @@
+$color:#2f5572;
+$width:100/4;
+body{
+  width:$width;
+  color: $color;
+  padding : 1em;
+  columns :300px 2;
+  box-sizing: border-box;
+  box-shadow: #f4f4f4;
+}
+
+.nested{
+  a{
+    color:green;
+    font-size: 1.2em;
+  }
+  p{
+    color:red;
+    font-style: italic;
+  }
+}
