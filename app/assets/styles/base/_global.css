@@ -1,8 +1,20 @@
-body{
-  font-family: 'Roboto',sans-serif;
-  color : #333;
+body {
+  margin:0px;
+  padding:0px;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
 }
-img{
-  width: 100%;
+
+img {
+  max-width: 100%;
   height: auto;
+}
+*{
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  border-bottom:2px dashed $mainOrange;
+  padding-bottom: 0.05rem;
+  color:$mainOrange;
 }
