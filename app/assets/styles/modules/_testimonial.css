@@ -1,0 +1,39 @@
+.testimonial{
+  position: relative;
+  background-color: rgba(51, 51, 51, 0.2);
+  padding : 0 18px 1px 18px;
+  margin-top:5em;
+  @mixin atLarge{
+    background-color: rgba(255, 255, 255, 0.7);
+    padding : 0 1.8125rem 1px 1.8125rem;
+    margin-top:0;
+  }
+  &__photo{
+    position: relative;
+    border : 6px solid rgba(255, 255, 255, 0.7);
+    border-radius: 80px;
+    overflow: hidden;
+    width:160px;
+    height:160px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -80px;
+    top : -80px;
+  }
+  &__title{
+  color : $mainBlue;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin:0;
+  }
+
+  &__subtitle{
+color:$mainOrange;
+text-align: center;
+font-weight: 400;
+font-size: 0.9375rem;
+margin: 0.25rem 0 1rem 0;
+  }
+
+}
