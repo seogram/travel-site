@@ -43,9 +43,8 @@
   &--b-margin-large {
     margin-bottom: 1.6em;
   }
-  @mixin atSmall {
-  &--no-t-margin{
-    margin-top:0;
+
+  &--no-t-margin {
+    margin-top: 0;
   }
-}
 }

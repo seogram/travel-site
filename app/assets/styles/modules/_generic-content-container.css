@@ -1,17 +1,17 @@
-.generic-content-container{
-  p{
-    font-family : "Roboto",sans-serif;
-    line-height: 1.8rem;
-    margin:0 0 1.8rem 0;
-    text-align: center;
-    @mixin atSmall{
-      font-size: 1.125rem;
-      font-weight: 300;
-      text-align: justify;
+.generic-content-container {
+  
+  p {
+    font-weight: 300;
+    line-height: 1.65;
+    margin: 0 0 1.8rem 0;
 
+    @mixin atSmall {
+      font-size: 1.125rem;
     }
   }
+
   p a {
-    font-weight: 500;
+    font-weight: 700;
   }
+
 }
