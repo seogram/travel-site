@@ -1,13 +1,9 @@
 .primary-nav {
-
-
   &--pull-right {
     @mixin atMedium{
       float: right;
-
     }
   }
-
   ul {
     margin-top:1rem;
     padding: 0;
@@ -15,10 +11,8 @@
     @mixin atMedium{
       margin: 0;
     }
-
     @mixin clearfix;
   }
-
   li {
     list-style: none;
     display: inline-block;
@@ -45,6 +39,9 @@
       font-size: 1rem;
       padding: 12px 0;
       background-color: transparent;
+    &.is-current-link {
+      color:$mainOrange;  
+    }
     }
   }
 }

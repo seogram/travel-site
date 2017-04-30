@@ -6,7 +6,12 @@
   transition: background-color 0.3s ease-out;
 
   @mixin atMedium {
+    position : fixed;
     background-color: rgba($mainBlue, .35);
+    &--dark {
+      background-color: rgba(23,51,72, .9);
+
+    }
   }
 
   &__btn-container {
@@ -24,10 +29,17 @@
     transform-origin: 50% 0;
     background-color: $mainBlue;
     padding: 25px 36px;
+    transition: transform 0.3s ease-out;
 
     @mixin atMedium {
       left: auto;
       transform: translateX(0);
+      /*change the menu link color when the color of sticky header changed*/
+      /*when wanrt to target 2 or several conditions in css only use space between each selectors*/
+      /*example below means : if .site-header--dark is active then & (logo -child selector) should be smaller*/
+      .site-header--dark & {
+        transform: scale(0.57);
+      }
     }
   }
 
